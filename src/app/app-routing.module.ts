@@ -13,7 +13,12 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(
 
     routes,
-    {preloadingStrategy: CustomPreloadStrategy}
+    {
+
+      preloadingStrategy: PreloadAllModules
+      // preloadingStrategy: CustomPreloadStrategy
+
+    }
     )],
 
 
